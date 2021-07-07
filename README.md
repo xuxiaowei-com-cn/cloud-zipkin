@@ -6,7 +6,7 @@
 - [zipkin-server](https://repo1.maven.org/maven2/io/zipkin/java/zipkin-server/)
     - SQL
         ```
-        zipkin-server-*.*.*-exec.jar 的 zipkin-storage-mysql-v1-*.*.*.jar 中的 mysql.sql
+        zipkin-server-*.*.*-exec.jar 中的 zipkin-storage-mysql-v1-*.*.*.jar 中的 mysql.sql
         ```
     - exec
         ```

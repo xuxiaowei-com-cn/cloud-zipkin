@@ -1,0 +1,5 @@
+#
+# 仅 zipkin
+spring:
+  zipkin:
+    base-url: http://192.168.5.4:9411/

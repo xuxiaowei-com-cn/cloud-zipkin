@@ -5,7 +5,18 @@ spring:
   application:
     name: cloud-zipkin
   zipkin:
-    base-url: http://192.168.5.4:9411/
+    sender:
+      type: kafka
+    kafka:
+      topic: zipkin
+  kafka:
+    # http://192.168.5.4:8048/topic/meta/zipkin/
+    bootstrap-servers: 192.168.5.4:9092
+  sleuth:
+    # 与采样相关的属性。
+    sampler:
+      # 应该采样的请求的概率。 例如，应该对 1.0 - 100% 的请求进行抽样。 精度仅为整数（即不支持 0.1% 的迹线）
+      probability: 1.0
 logging:
   level:
     web: debug

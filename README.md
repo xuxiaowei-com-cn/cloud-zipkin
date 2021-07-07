@@ -9,6 +9,7 @@
         zipkin-server-*.*.*-exec.jar 中的 zipkin-storage-mysql-v1-*.*.*.jar 中的 mysql.sql
         ```
     - exec
+        - MySQL 数据库密码插件`mysql_native_password`
         ```
         java -jar zipkin-server-*.*.*-exec.jar --STORAGE_TYPE=mysql --MYSQL_HOST=127.0.0.1 --MYSQL_TCP_PORT=3306 --MYSQL_DB=zipkin --MYSQL_USER=root --MYSQL_PASS=root
         ```
